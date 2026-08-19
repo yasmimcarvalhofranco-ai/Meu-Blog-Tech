@@ -1,0 +1,193 @@
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#e8f1fb;
+    color:#183C63;
+}
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+header{
+
+    background:#183C63;
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    margin-bottom:30px;
+}
+
+header h1{
+
+    margin-bottom:10px;
+}
+
+/* ==========================
+   CONTEÚDO PRINCIPAL
+========================== */
+
+main{
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+    padding:20px;
+}
+
+/* ==========================
+   POSTS
+========================== */
+
+article{
+
+    display:flex;
+
+    gap:20px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+
+    align-items:flex-start;
+}
+
+/* ==========================
+   IMAGEM
+========================== */
+
+article img{
+
+    width:140px;
+
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+}
+
+/* ==========================
+   TEXTO
+========================== */
+
+.conteudo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    flex:1;
+}
+
+.artigo-autor{
+
+    font-weight:bold;
+
+    color:#0f6ab4;
+}
+
+/* ==========================
+   DICA DE PROGRAMAÇÃO
+========================== */
+
+.dica{
+
+    background:#dcefff;
+
+    border-left:6px solid #0f6ab4;
+
+    padding:12px;
+
+    border-radius:6px;
+
+    line-height:1.5;
+}
+
+/* ==========================
+   BOTÕES
+========================== */
+
+.botoes{
+
+    display:flex;
+
+    gap:12px;
+}
+
+button{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#183C63;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#0f6ab4;
+
+    transform:scale(1.05);
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media (max-width:700px){
+
+    article{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+    }
+
+    article img{
+
+        width:180px;
+
+        height:180px;
+    }
+
+    .botoes{
+
+        justify-content:center;
+    }
+
+}
