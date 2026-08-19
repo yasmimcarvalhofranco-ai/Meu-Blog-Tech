@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog Tech</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>💻 Meu Blog Tech</h1>
+        <p>Compartilhando conhecimentos sobre programação, tecnologia e criatividade.</p>
+    </header>
+
+    <main>
+
+        <article>
+
+            <img src="imagem-blog.png"
+                alt="Ilustração de tecnologia e programação">
+
+            <div class="conteudo">
+
+                <h2>Meu primeiro post</h2>
+
+                <p class="artigo-autor">
+                    Por: Greice Elaine
+                </p>
+
+                <p>
+                    Bem-vindo ao meu blog! Aqui você encontrará conteúdos sobre programação,
+                    desenvolvimento web e tecnologia. Aprender a programar é como aprender um
+                    novo idioma: quanto mais você pratica, melhores serão seus resultados.
+                </p>
+
+                <div class="dica">
+                    💡 <strong>Dica de Programação:</strong>
+                    Utilize nomes claros para variáveis e classes. Um código organizado é muito
+                    mais fácil de entender e de manter.
+                </div>
+
+                <div class="botoes">
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
+                </div>
+
+            </div>
+
+        </article>
+
+        <article>
+
+            <img src="imagem-blog.png"
+                alt="Ilustração de tecnologia e programação">
+
+            <div class="conteudo">
+
+                <h2>Meu segundo post</h2>
+
+                <p class="artigo-autor">
+                    Por: Greice Elaine
+                </p>
+
+                <p>
+                    O HTML cria a estrutura da página, enquanto o CSS é responsável pelo estilo
+                    e pela organização dos elementos. Quando essas duas linguagens trabalham
+                    juntas, é possível criar páginas bonitas, organizadas e responsivas.
+                </p>
+
+                <div class="dica">
+                    💡 <strong>Dica de Programação:</strong>
+                    Sempre utilize o Flexbox para organizar elementos lado a lado. Ele facilita
+                    o alinhamento e deixa o código mais simples.
+                </div>
+
+                <div class="botoes">
+                    <button>❤️ <span>0</span></button>
+                    <button>👍 <span>0</span></button>
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <script>
+
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach((botao) => {
+
+            let curtiu = false;
+
+            botao.addEventListener("click", () => {
+
+                const contador = botao.querySelector("span");
+
+                if (!curtiu) {
+                    contador.textContent = Number(contador.textContent) + 1;
+                    curtiu = true;
+                } else {
+                    contador.textContent = Number(contador.textContent) - 1;
+                    curtiu = false;
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
